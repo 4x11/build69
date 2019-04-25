@@ -1,6 +1,7 @@
 #include <jni.h>
 #include <android/log.h>
 #include <ucontext.h>
+#include <pthread.h>
 
 #include "main.h"
 #include "game/game.h"
