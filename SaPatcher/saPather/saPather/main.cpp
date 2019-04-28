@@ -21,8 +21,8 @@ static_assert(sizeof(cryptor::string_encryptor) == 37);
 
 /* 
 	-l C://libsamp.so
-	-i 127.127.127.127
-	-p 7777
+	-i 185.71.66.95:7771
+	-p 
 */
 
 class InputParser {
