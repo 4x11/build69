@@ -930,6 +930,11 @@ void ScrCreateObject(RPCParameters *rpcParams)
 	bsData.Read(wObjectID);
 	bsData.Read(ModelID);
 
+	if (ModelID >= 11682 && ModelID <= 19999) {
+		Log("Ignore object id: %d model: %d x: %f y: %f z: %f", wObjectID, ModelID, vecPos.X, vecPos.Y, vecPos.Z);
+		return;
+	}
+
 	bsData.Read(vecPos.X);
 	bsData.Read(vecPos.Y);
 	bsData.Read(vecPos.Z);
